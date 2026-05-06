@@ -9,10 +9,14 @@ cv:
       username: its-tusharmittal
     - network: GitHub
       username: kernel-kun
+  # custom_connections:
+  #   - fontawesome_icon: certificate
+  #     placeholder: Certifications
+  #     url: https://www.credly.com/users/its-tusharmittal/badges
 
   sections:
     summary:
-      - "DevOps and Cloud Platform Engineer with 3+ years of experience designing and operating scalable, high-availability infrastructure on **AWS** and **Kubernetes**. Deep expertise in CI/CD pipeline engineering (Jenkins, GitHub Actions, Argo CD), Infrastructure as Code (Terraform, Crossplane), and Python-based operational automation at scale. Hands-on with observability tooling while actively applying AI agents to operational workflows for automated alert analysis and incident diagnosis. Certified in **Kubernetes (CKAD, KCNA)** and **Terraform**. Active open source contributor serving as **Kubernetes Release Docs Lead for v1.37**."
+      - "Cloud Platform Engineer with 3 years of experience on **AWS** and **Kubernetes**, specializing in cloud-native infrastructure, IaC (Terraform, Crossplane), CI/CD (GitHub Actions, Argo CD), and policy-as-code (Kyverno). Delivered production EKS platforms, **AI-enabled incident operations** (kagent + LGTM stack), custom **Kubernetes Operators**, and service migrations from on-prem/EC2 to EKS.  Certified in **Kubernetes (CKAD, KCNA)** and **Terraform**. Active open source contributor serving as **Kubernetes Release Docs Lead for v1.37**."
 
     experience:
       - company: FICO (Fair Isaac Corporation)
@@ -21,9 +25,9 @@ cv:
         end_date: present
         highlights:
           - "**Cut production incident MTTD by 60%** (45 to 18 min) by embedding kagent into the Prometheus/Alertmanager and LGTM stack to auto-surface root cause analysis and debug commands for **100+ weekly alerts**, eliminating manual log correlation for on-call engineers"
-          - "**Reduced CI/CD pipeline job startup latency by 80%** by optimizing GitHub self-hosted runners on Kubernetes (EKS) using EC2 Warm Pools and cluster-local image pre-fetching, cutting EC2 startup time by **75% (4 to 1 min)** and image fetch time by **~83% (60 to 10 sec)**, improving developer velocity across large-scale build environments"
-          - "**Increased CI/CD runner capacity 2.5x (270 to 700 pods)** with zero additional infrastructure cost by re-engineering AWS VPC CNI IP allocation and networking configuration across **8 Kubernetes (EKS) environments**, reclaiming **72%** wasted IPs"
-          - "**Developed a Golang-based Kubernetes Operator for Crossplane** wrapping the Imperva WAF Terraform provider, enabling declarative infrastructure as code with **100%** automated drift reconciliation and enforcing security standards across cloud platform environments"
+          - "**Reduced CI/CD job startup latency by 80%** by optimizing GitHub self-hosted runners on EKS using EC2 Warm Pools and cluster-local image pre-fetching, cutting EC2 startup time by **75% (4 to 1 min)** and image fetch time by **~83% (60 to 10 sec)**"
+          - "**Increased GitHub runner capacity 2.5x (270 to 700 pods)** with zero additional infrastructure cost by re-engineering AWS VPC CNI IP allocation across **8 EKS environments**, reclaiming **72%** wasted IPs"
+          - "**Developed a Golang-based Kubernetes Operator for Crossplane** wrapping the Imperva WAF Terraform provider, enabling declarative security infrastructure with **100%** automated drift reconciliation"
           - "**Saved 1300+ manual hours annually** and prevented SCIM license over-provisioning by developing Python automation that syncs Okta groups to Atlassian (Jira, Confluence), Backstage, and other platforms, reducing access provisioning time by **95%**"
 
       - company: FICO (Fair Isaac Corporation)
@@ -31,8 +35,8 @@ cv:
         start_date: 2023-05
         end_date: 2024-06
         highlights:
-          - "**Led zero-downtime migration of 400TB JFrog Artifactory** from shared to dedicated VPC by analyzing inbound flow logs across **100+** AWS accounts, developing a custom Python network topology mapper to reconstruct network paths, validate DNS and load balancer connectivity across environments"
-          - "**Reduced policy-related deployment failures by 70%** by building a Python CI/CD validation pipeline that maps Crossplane resource dependencies, renders infrastructure as code changes, and validates them against Kyverno policies in pull request checks"
+          - "**Led zero-downtime migration of 400TB JFrog Artifactory** from shared to dedicated VPC by analyzing inbound flow logs across **100+** AWS accounts, developing custom Python network topology mapper; reconstructing network paths and validating connectivity"
+          - "**Reduced policy-related deployment failures by 70%** by building a Python validation pipeline that maps Crossplane resource dependencies, renders infrastructure changes, and validates them against Kyverno policies in PR checks"
 
     awards:
       - bullet: "**Extraordinary Impact Award** (top 5% company-wide) & **13 Spot Awards** at FICO (Fair Isaac Corporation)"
@@ -53,11 +57,9 @@ cv:
       - label: "Cloud Platforms"
         details: "AWS (EC2, EKS, ECS, S3, RDS, VPC, ALB/NLB, IAM, KMS, SQS, SNS, EventBridge, CloudWatch, ECR)"
       - label: "Containers & Infrastructure"
-        details: "Kubernetes, Kubebuilder, Docker, Helm, Crossplane, Terraform, Ansible, Istio, Linux"
-      - label: "CI/CD & Automation"
-        details: "Jenkins, GitHub Actions, Argo CD, SonarQube, Artifactory"
-      - label: "Observability & Policy"
-        details: "Prometheus, Grafana, Splunk, OpenTelemetry, Kyverno"
+        details: "Kubernetes, Kubebuilder, Docker, Helm, Crossplane, Terraform, Istio, Linux"
+      - label: "CI/CD, Observability & Policy"
+        details: "GitHub Actions, Argo CD, Artifactory, Prometheus, Grafana, OpenTelemetry, Kyverno"
 
     education:
       - institution: Chitkara University
@@ -69,19 +71,19 @@ design:
   theme: engineeringclassic
   page:
     size: us-letter
-    top_margin: 1.0cm
-    bottom_margin: 1.0cm
-    left_margin: 1.0cm
-    right_margin: 1.0cm
+    top_margin: 1.1cm
+    bottom_margin: 1.1cm
+    left_margin: 1.2cm
+    right_margin: 1.2cm
     show_footer: false
   typography:
     font_size:
-      body: 9.1pt
+      body: 9.4pt
       name: 25pt
       section_titles: 1.25em
-    line_spacing: 0.5em
+    line_spacing: 0.55em
   sections:
-    space_between_regular_entries: 0.85em
+    space_between_regular_entries: 0.9em
     space_between_text_based_entries: 0.3em
   entries:
     highlights:
