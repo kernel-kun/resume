@@ -1,0 +1,87 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Tushar Mittal
+  location: Bangalore, India
+  email: tusharmittalworkm@gmail.com
+  phone: "+91-8696271879"
+  social_networks:
+    - network: LinkedIn
+      username: its-tusharmittal
+    - network: GitHub
+      username: kernel-kun
+
+  sections:
+    summary:
+      - "Cloud Platform Engineer with 3 years of experience operating **AWS** and **Kubernetes** infrastructure at scale (100+ accounts). Delivered production EKS platforms, **AI-enabled incident operations** (60% MTTD reduction), and custom **Kubernetes Operators**. Certified in **Kubernetes (CKAD, KCNA)** and **Terraform** and is **Kubernetes Release Docs Lead for v1.37**."
+
+    experience:
+      - company: FICO (Fair Isaac Corporation)
+        position: "Cloud Platform Engineer — Engineer I"
+        start_date: 2024-06
+        end_date: present
+        highlights:
+          - "**Cut production incident MTTD by 60%** (45 to 18 min) by embedding kagent into the Prometheus/Alertmanager and LGTM stack to auto-surface root cause analysis and debug commands for **100+ weekly alerts**, improving SLO adherence and eliminating manual log correlation"
+          - "**Maintained 12x7 on-call support** for platform-critical services (GitHub Runners, Argo CD, JFrog Artifactory) serving **100+ internal accounts**, driving post-incident reviews and toil-reduction initiatives"
+          - "**Reduced CI/CD job startup latency by 80%** by optimizing GitHub self-hosted runners on EKS using EC2 Warm Pools and cluster-local image pre-fetching, cutting EC2 startup time by **75% (4 to 1 min)** and image fetch time by **~83% (60 to 10 sec)**"
+          - "**Increased GitHub runner capacity 2.5x (270 to 700 pods)** with zero additional infrastructure cost by re-engineering AWS VPC CNI IP allocation, reclaiming **72%** wasted IPs"
+          - "**Developed a Golang-based Kubernetes Operator for Crossplane** wrapping the Imperva WAF Terraform provider, enabling declarative security infrastructure with **100%** automated drift reconciliation"
+
+      - company: FICO (Fair Isaac Corporation)
+        position: "Cloud Platform Engineer — Intern"
+        start_date: 2023-05
+        end_date: 2024-06
+        highlights:
+          - "**Saved 1300+ manual hours annually** and prevented SCIM license over-provisioning by developing Python automation that syncs Okta groups to Atlassian (Jira, Confluence), Backstage, and other platforms, reducing access provisioning time by **95%**"
+          - "**Led zero-downtime migration of 400TB JFrog Artifactory** from shared to dedicated VPC by analyzing inbound flow logs across **100+** AWS accounts, developing custom Python network topology mapper; reconstructing network paths and validating connectivity"
+
+    awards:
+      - bullet: "**Extraordinary Impact Award** (top 5% company-wide) & **13 Spot Awards** at FICO (Fair Isaac Corporation)"
+
+    open_source_and_community:
+      - name: "Kubernetes (SIG Release)"
+        highlights:
+          - "Release Team Contributor: **Docs lead** for v1.37 release cycle and **Docs shadow** for [v1.35](https://github.com/kubernetes/sig-release/blob/master/releases/release-1.35/release-team.md) and [v1.36](https://github.com/kubernetes/sig-release/blob/master/releases/release-1.36/release-team.md) release cycles"
+          - "Contributed to the official Kubernetes release tooling — [automated release note regeneration](https://github.com/kubernetes/release/pull/4349) and [CI pipeline enhancements](https://github.com/kubernetes/sig-release/pull/3000)"
+      - name: "PyCon India 2025 — Speaker: Making Sense of Big Codebases (DeepWiki & Crabviz)"
+
+    certifications:
+      - bullet: "**Kubernetes:** [CKAD](https://www.credly.com/badges/58f300e4-d556-4292-9a31-ab99c2ecedaf), [KCNA](https://www.credly.com/badges/ee02ba1d-e4f3-43f6-adfc-c56817095093) | **Terraform:** [Associate](https://www.credly.com/badges/a79df49f-c622-4af8-ac9f-0a95c126f44b) | **GitHub:** [Foundations](https://www.credly.com/badges/6fac885e-4cec-4531-b019-4dedb8dbf49c)"
+
+    technical_skills:
+      - label: Programming
+        details: "Python, Go, Bash"
+      - label: "Cloud Platforms"
+        details: "AWS (EC2, EKS, ECS, S3, RDS, VPC, ALB/NLB, IAM, KMS, SQS, SNS, EventBridge, CloudWatch, ECR)"
+      - label: "Containers & Infrastructure"
+        details: "Kubernetes, Kubebuilder, Docker, Helm, Crossplane, Terraform, Istio, Linux"
+      - label: "CI/CD, Observability & Policy"
+        details: "GitHub Actions, Argo CD, Artifactory, Prometheus, Grafana, OpenTelemetry, Kyverno"
+
+    education:
+      - institution: Chitkara University
+        area: "Computer Science | CGPA: 9.87/10.00 (Top 5%)"
+        degree: BE
+        end_date: 2024-05
+
+design:
+  theme: engineeringclassic
+  page:
+    size: us-letter
+    top_margin: 1.1cm
+    bottom_margin: 1.1cm
+    left_margin: 1.2cm
+    right_margin: 1.2cm
+    show_footer: false
+  typography:
+    font_size:
+      body: 9.5pt
+      name: 25pt
+      section_titles: 1.25em
+    line_spacing: 0.55em
+  sections:
+    space_between_regular_entries: 0.9em
+    space_between_text_based_entries: 0.3em
+  entries:
+    highlights:
+      space_between_items: 0.08cm
+      space_above: 0.08cm
